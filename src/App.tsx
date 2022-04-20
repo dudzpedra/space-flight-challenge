@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { RocketLaunch } from "@mui/icons-material";
+import { Avatar, Box, Typography } from "@mui/material";
+import "./App.sass";
+import ArticlesList from "./components/ArticlesList";
+import SearchArticles from "./components/SearchArticles";
+import SelectSorting from "./components/SelectSorting";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box className="app-container">
+      <Box className="top-container">
+        <Box className="top-menu">
+          <SearchArticles />
+          <SelectSorting />
+        </Box>
+        <Box>
+          <Avatar className="avatar">
+            <RocketLaunch sx={{ fontSize: 80 }} />
+          </Avatar>
+          <Typography className="top-title" variant="h4">Space Flight News</Typography>
+        </Box>
+      </Box>
+      <Box className="main-container">
+        <ArticlesList />
+      </Box>
+    </Box>
   );
 }
 
