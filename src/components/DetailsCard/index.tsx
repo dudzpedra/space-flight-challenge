@@ -1,10 +1,15 @@
 import { Box } from "@mui/material"
+import { Article } from "../../types"
 import './styles.sass'
 
-const DetailsCard = () => {
+type DetailsCardProps = {
+  article: Article
+}
+
+const DetailsCard = ({article}: DetailsCardProps) => {
   return (
     <Box className="details-container">
-      
+      {article.title}
     </Box>
   )
 }

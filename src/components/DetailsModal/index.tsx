@@ -11,7 +11,9 @@ type DetailsProps = {
 const DetailsModal = ({ open, handleClose, article }: DetailsProps) => {
   return (
     <Modal open={open} onClose={handleClose}>
-      <DetailsCard />
+      <Box>
+        <DetailsCard article={article} />
+      </Box>
     </Modal>
   );
 };

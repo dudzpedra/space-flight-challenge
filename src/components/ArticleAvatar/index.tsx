@@ -1,5 +1,4 @@
 import { Avatar, Box } from "@mui/material";
-import './styles.sass'
 
 type ArticleAvatarProps = {
   title: string;
@@ -8,7 +7,7 @@ type ArticleAvatarProps = {
 
 const ArticleAvatar = ({ title, url }: ArticleAvatarProps) => {
   return (
-    <Box>
+    <Box className="avatar-container">
       <Avatar
         className="card-avatar"
         alt={title}
