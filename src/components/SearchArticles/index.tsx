@@ -17,8 +17,7 @@ const SearchArticles = () => {
       <FormControl>
         <InputLabel htmlFor="search-input">Search Articles</InputLabel>
         <Input
-          value={search.value}
-          onChange={search.onChange}
+          {...search}
           id="search-input"
           endAdornment={
             <InputAdornment position="end">

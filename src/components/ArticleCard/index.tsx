@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { Article } from "../../types";
+import { Article } from "../../utils/types";
 import ArticleAvatar from "../ArticleAvatar";
 import ArticleInfo from "../ArticleInfo";
 import "./styles.sass";

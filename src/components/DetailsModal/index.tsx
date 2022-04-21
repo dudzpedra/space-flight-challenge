@@ -1,5 +1,5 @@
 import { Box, Modal } from "@mui/material";
-import { Article } from "../../types";
+import { Article } from "../../utils/types";
 import DetailsCard from "../DetailsCard";
 
 type DetailsProps = {

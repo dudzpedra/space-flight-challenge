@@ -16,6 +16,5 @@ export const useSearch = () => {
   return {
     value,
     onChange,
-    setValue,
   };
 };

@@ -5,7 +5,7 @@ import {
   sortArticlesByNewest,
   sortArticlesByOldest,
 } from "../../reducers/articles";
-import { Article } from "../../../types";
+import { Article } from "../../../utils/types";
 import { AppDispatch } from "../..";
 
 export const setAllArticles =

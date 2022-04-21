@@ -1,19 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { searchByTitle } from "../../../services/searchService";
 import { sortByNewest, sortByOldest } from "../../../services/sortService";
-import { Article } from "../../../types";
-import { RootState } from "../../index";
-
-interface ArticleState {
-  articlesList: Article[];
-  filteredArticles: Article[];
-  queryLimit: number
-}
+import { Article, ArticleState } from "../../../utils/types";
 
 const initialState: ArticleState = {
   articlesList: [],
   filteredArticles: [],
-  queryLimit: 3
+  queryLimit: 10,
+  amount: 10
 };
 
 const articlesSlice = createSlice({
@@ -40,7 +34,7 @@ const articlesSlice = createSlice({
       }
     },
     loadMore (state) {
-      state.queryLimit += 3
+      state.queryLimit += state.amount
     }
   },
 });
@@ -52,7 +46,5 @@ export const {
   filterArticles,
   loadMore
 } = articlesSlice.actions;
-
-export const selectArticles = (state: RootState) => state.articles.articlesList;
 
 export default articlesSlice.reducer;

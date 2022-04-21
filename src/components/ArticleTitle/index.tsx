@@ -1,10 +1,13 @@
 import { Box, Typography } from "@mui/material";
 
-const ArticleTitle = () => {
+type ArticleTitleProps = {
+  title: string
+}
+const ArticleTitle = ({ title }: ArticleTitleProps) => {
   return (
     <Box>
-      <Typography className="card-title" variant="body1">
-        {/* {article.title} */}
+      <Typography className="card-title" variant="h6">
+        {title}
       </Typography>
     </Box>
   );

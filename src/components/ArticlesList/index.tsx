@@ -3,7 +3,7 @@ import { useEffect, useCallback } from "react";
 import { getData } from "../../services/getData";
 import { useAppDispatch, useAppSelector } from "../../store";
 import { loadMoreArticles, setAllArticles } from "../../store/actions/articles";
-import { Article } from "../../types";
+import { Article } from "../../utils/types";
 import ArticleCard from "../ArticleCard";
 import "./styles.sass";
 

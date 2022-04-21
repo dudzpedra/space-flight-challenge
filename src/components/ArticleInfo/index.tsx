@@ -1,11 +1,15 @@
-import { Box, Button, Typography } from "@mui/material"
-import { Article } from "../../types"
-import DetailsModal from "../DetailsModal"
+import { Box } from "@mui/material";
+import { Article } from "../../utils/types";
+import DetailsModal from "../DetailsModal";
 import { useState } from "react";
+import ArticleTitle from "../ArticleTitle";
+import ArticleSubtitle from "../ArticleSubtitle";
+import ArticleSummary from "../ArticleSummary";
+import ArticleDetails from "../ArticleDetails";
 
 type ArticleInfoProps = {
-  article: Article
-}
+  article: Article;
+};
 
 const ArticleInfo = ({ article }: ArticleInfoProps) => {
   const [open, setOpen] = useState(false);
@@ -15,22 +19,13 @@ const ArticleInfo = ({ article }: ArticleInfoProps) => {
 
   return (
     <Box className="card-info">
-        <Typography className="card-title" variant="body1">
-          {article.title}
-        </Typography>
-        <Box className="card-subtitle">
-          <Typography variant="caption">
-            {new Date(article.publishedAt).toDateString()}
-          </Typography>
-          <Typography className="card-news-site">{article.newsSite}</Typography>
-        </Box>
-        <Typography variant="body2">{article.summary}</Typography>
-        <Button onClick={handleOpen} className="card-btn" variant="contained">
-          View More
-        </Button>
-        <DetailsModal open={open} handleClose={handleClose} article={article} />
-      </Box>
-  )
-}
+      <ArticleTitle title={article.title} />
+      <ArticleSubtitle date={article.publishedAt} site={article.newsSite} />
+      <ArticleSummary summary={article.summary} />
+      <ArticleDetails handleOpen={handleOpen} />
+      <DetailsModal open={open} handleClose={handleClose} article={article} />
+    </Box>
+  );
+};
 
-export default ArticleInfo
+export default ArticleInfo;

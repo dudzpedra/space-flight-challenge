@@ -1,4 +1,4 @@
-import { Article } from "../types";
+import { Article } from "../utils/types";
 
 export const sortByNewest = (list: Article[]) =>
   [...list].sort((a, b) =>
