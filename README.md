@@ -13,10 +13,12 @@ A simple app to fetch and display Space Flight articles from an external API.
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
-- [Axios](https://axios-http.com/) and [Space Flight News API](https://spaceflightnewsapi.net/)
+- [Axios](https://axios-http.com/) 
+- [Space Flight News API](https://spaceflightnewsapi.net/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Material UI](https://mui.com/pt/)
 - [Docker](https://docs.docker.com/)
+- [NGINX](https://www.nginx.com/)
   
 ## Setup
 
