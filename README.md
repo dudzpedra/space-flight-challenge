@@ -16,6 +16,7 @@ A simple app to fetch and display Space Flight articles from an external API.
 - [Axios](https://axios-http.com/) and [Space Flight News API](https://spaceflightnewsapi.net/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Material UI](https://mui.com/pt/)
+- [Docker](https://docs.docker.com/)
   
 ## Setup
 
@@ -30,6 +31,16 @@ Install the dependencies:
 Run the app in the browser:
 
 `npm start`
+
+## Docker
+
+The project already has a Dockerfile. You can build the image like:
+
+`docker build . -t space-flight-news`
+
+Then you can run the project with:
+
+`docker run -p 8000:80 space-flight-news`
 
 ## Instructions
 
