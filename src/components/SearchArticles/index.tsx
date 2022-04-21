@@ -2,7 +2,6 @@ import { Search } from "@mui/icons-material";
 import {
   Box,
   FormControl,
-  IconButton,
   Input,
   InputAdornment,
   InputLabel,
@@ -12,11 +11,6 @@ import "./styles.sass";
 
 const SearchArticles = () => {
   const search = useSearch();
-
-  const handleSearch = (str: string) => {
-    alert(str);
-    search.setValue('')
-  };
 
   return (
     <Box className="search-container">
@@ -28,9 +22,7 @@ const SearchArticles = () => {
           id="search-input"
           endAdornment={
             <InputAdornment position="end">
-              <IconButton onClick={() => handleSearch(search.value)}>
                 <Search />
-              </IconButton>
             </InputAdornment>
           }
         />

@@ -1,6 +1,9 @@
 import axios from "axios"
 
-export const getData = async () => {
-  const response = await axios.get('https://api.spaceflightnewsapi.net/v3/articles')
+const baseUrl = 'https://api.spaceflightnewsapi.net/v3/articles'
+
+export const getData = async (limit: number) => {
+  const response = await axios.get(`${baseUrl}?_limit=${limit}`)
+  if (limit > response.data.length) alert('There is no more articles to show...')
   return response.data
 }
