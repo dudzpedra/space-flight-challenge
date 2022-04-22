@@ -6,16 +6,15 @@
     border-bottom: 1px solid
     width: 90%
     margin: 0 auto
-    padding: 1rem
-    box-shadow: 0 1px
+    padding: 0.5rem
+    opacity: 0.8
 
     .top-menu
       display: flex
       flex-direction: row
-      margin: 2rem auto
       position: absolute
-      right: 6rem
-      min-width: 60%
+      top: 1rem
+      right: 1rem
 
     .avatar
       width: 100px,
@@ -23,7 +22,7 @@
       background: #fff,
       color: #1E2022,
       border: 2px solid #1e2022,
-      margin: 8rem auto 1rem
+      margin: 5rem auto 1rem
 
       .rocket
         width: 50px
@@ -31,3 +30,8 @@
 
     .top-title
       text-align: center
+
+@media (min-width: 1024px)
+  .top-container
+    .top-menu
+      width: 35%
