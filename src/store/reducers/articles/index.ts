@@ -31,6 +31,8 @@ const articlesSlice = createSlice({
           state.articlesList,
           action.payload
         );
+      } else {
+        state.filteredArticles = []
       }
     },
     loadMore (state) {
