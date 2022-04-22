@@ -15,9 +15,9 @@ function App() {
         </Box>
         <Box>
           <Avatar className="avatar">
-            <RocketLaunch sx={{ fontSize: 80 }} />
+            <RocketLaunch className="rocket" />
           </Avatar>
-          <Typography className="top-title" variant="h4">Space Flight News</Typography>
+          <Typography className="top-title" variant="h5">Space Flight News</Typography>
         </Box>
       </Box>
       <Box className="main-container">
