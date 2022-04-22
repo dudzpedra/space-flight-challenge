@@ -6,8 +6,8 @@ type ArticleDateProps = {
 }
 const ArticleDate = ({ date }: ArticleDateProps) => {
   return (
-    <Box className="article-date">
-      <Typography variant="caption">{new Date(date).toDateString()}</Typography>
+    <Box>
+      <Typography className="article-date">{new Date(date).toDateString()}</Typography>
     </Box>
   );
 };

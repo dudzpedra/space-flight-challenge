@@ -1,5 +1,4 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import './styles.sass'
 type ArticleSiteProps = {
   site: string;
 };
@@ -9,7 +8,7 @@ const ArticleSite = ({ site }: ArticleSiteProps) => {
   return (
     <Box>
       <Typography
-        className="card-news-site"
+        className="article-site"
         sx={{ bgcolor: palette.info.main }}
       >
         {site}

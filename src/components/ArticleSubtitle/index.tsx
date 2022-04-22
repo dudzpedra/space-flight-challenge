@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 import ArticleDate from "../ArticleDate";
 import ArticleSite from "../ArticleSite";
-import './styles.sass'
 
 type ArticleSubtitleProps = {
   date: string

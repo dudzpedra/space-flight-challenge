@@ -6,7 +6,7 @@ type ArticleTitleProps = {
 const ArticleTitle = ({ title }: ArticleTitleProps) => {
   return (
     <Box>
-      <Typography className="card-title" variant="h6">
+      <Typography className="card-title">
         {title}
       </Typography>
     </Box>

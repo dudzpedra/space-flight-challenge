@@ -1,5 +1,4 @@
 import { Avatar, Box } from "@mui/material";
-import './styles.sass'
 
 type ArticleAvatarProps = {
   title: string;
