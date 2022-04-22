@@ -32,7 +32,7 @@ const ArticlesList = () => {
   };
 
   return (
-    <Box className="list-container">
+    <Box className="main-container">
       {articles &&
         articles.map((a: Article) => <ArticleCard key={a.id} article={a} />)}
       <Button onClick={handleLoad} variant="outlined" color="secondary">
