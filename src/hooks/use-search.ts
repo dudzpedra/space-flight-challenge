@@ -12,7 +12,7 @@ export const useSearch = () => {
   };
 
   useEffect(() => {
-    if (value) {
+    if (value !== '') {
       dispatch(searchArticles(value));
     }
   }, [value, dispatch]);

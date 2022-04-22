@@ -9,7 +9,7 @@ export const theme = createTheme({
       main: '#302E53'
     },
     info: {
-      main: '#D07017'
+      main: 'rgba(208, 112, 23, 0.8)'
     },
     text: {
       primary: '#1E2022'
