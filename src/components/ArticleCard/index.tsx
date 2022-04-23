@@ -6,12 +6,13 @@ import "./styles.sass";
 
 type ArticleProps = {
   article: Article;
+  index: number
 };
 
-const ArticleCard = ({ article }: ArticleProps) => {
+const ArticleCard = ({ article, index }: ArticleProps) => {
   
   return (
-    <Box className="card-container">
+    <Box className={index%2 === 0 ? 'card-even' : "card-odd"}>
       <ArticleAvatar title={article.title} url={article.imageUrl} />
       <ArticleInfo article={article} />
     </Box>

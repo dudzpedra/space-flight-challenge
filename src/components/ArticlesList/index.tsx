@@ -34,7 +34,7 @@ const ArticlesList = () => {
   return (
     <Box className="main-container">
       {articles &&
-        articles.map((a: Article) => <ArticleCard key={a.id} article={a} />)}
+        articles.map((a: Article, index: number) => <ArticleCard index={index} key={a.id} article={a} />)}
       <Button onClick={handleLoad} variant="outlined" color="secondary">
         Load More
       </Button>
