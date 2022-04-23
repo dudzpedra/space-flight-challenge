@@ -15,7 +15,7 @@ const SearchArticles = () => {
   return (
     <Box className="search-container">
       <FormControl>
-        <InputLabel htmlFor="search-input">Search Articles</InputLabel>
+        <InputLabel htmlFor="search-input">Search</InputLabel>
         <Input
           {...search}
           id="search-input"
