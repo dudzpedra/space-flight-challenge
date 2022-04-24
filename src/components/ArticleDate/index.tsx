@@ -3,11 +3,12 @@ import './styles.sass'
 
 type ArticleDateProps = {
   date: string
+  isModal: boolean
 }
-const ArticleDate = ({ date }: ArticleDateProps) => {
+const ArticleDate = ({ date, isModal }: ArticleDateProps) => {
   return (
     <Box>
-      <Typography className="article-date">{new Date(date).toDateString()}</Typography>
+      <Typography className={isModal ? 'details-date' : "article-date"}>{new Date(date).toDateString()}</Typography>
     </Box>
   );
 };

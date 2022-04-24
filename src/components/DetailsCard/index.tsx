@@ -14,18 +14,16 @@ const DetailsCard = ({ article }: DetailsCardProps) => {
   return (
     <Box className="details-container">
       <Box className="details-main">
-        <Box className="details-avatar">
-          <ArticleAvatar title={article.title} url={article.imageUrl} />
-        </Box>
+        <ArticleAvatar title={article.title} url={article.imageUrl} isModal={true} />
         <Box className="details-info">
-          <ArticleTitle title={article.title} />
-          <ArticleDate date={article.publishedAt} />
-          <ArticleSummary summary={article.summary} />
+          <ArticleTitle title={article.title} isModal={true} />
+          <ArticleDate date={article.publishedAt} isModal={true} />
+          <ArticleSummary summary={article.summary} isModal={true} />
         </Box>
       </Box>
-      <Box className="details-btn">
+      <Box className="details-link">
         <Link href={article.url} target="_blank" rel="noreferrer noopener">
-          <Button variant="contained" color="primary">
+          <Button className="details-btn" variant="contained" color="primary">
             Go to news site
           </Button>
         </Link>

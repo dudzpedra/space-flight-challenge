@@ -13,7 +13,7 @@ const ArticleCard = ({ article, index }: ArticleProps) => {
   
   return (
     <Box className={index%2 === 0 ? 'card-even' : "card-odd"}>
-      <ArticleAvatar title={article.title} url={article.imageUrl} />
+      <ArticleAvatar title={article.title} url={article.imageUrl} isModal={false} />
       <ArticleInfo article={article} />
     </Box>
   );

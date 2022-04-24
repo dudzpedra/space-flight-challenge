@@ -7,7 +7,7 @@ const initialState: ArticleState = {
   articlesList: [],
   filteredArticles: [],
   queryLimit: 10,
-  amount: 10
+  amount: 10,
 };
 
 const articlesSlice = createSlice({

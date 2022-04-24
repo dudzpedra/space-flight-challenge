@@ -5,12 +5,13 @@ import ArticleSite from "../ArticleSite";
 type ArticleSubtitleProps = {
   date: string
   site: string
+  isModal: boolean
 }
 
-const ArticleSubtitle = ({date, site}: ArticleSubtitleProps) => {
+const ArticleSubtitle = ({date, site, isModal}: ArticleSubtitleProps) => {
   return (
-    <Box className="card-subtitle">
-      <ArticleDate date={date} />
+    <Box className={isModal ? 'details-subtitle' : "article-subtitle"}>
+      <ArticleDate date={date} isModal={false} />
       <ArticleSite site={site} />
     </Box>
   );

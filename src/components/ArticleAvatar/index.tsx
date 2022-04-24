@@ -3,13 +3,14 @@ import { Avatar, Box } from "@mui/material";
 type ArticleAvatarProps = {
   title: string;
   url: string;
+  isModal: boolean;
 };
 
-const ArticleAvatar = ({ title, url }: ArticleAvatarProps) => {
+const ArticleAvatar = ({ title, url, isModal }: ArticleAvatarProps) => {
   return (
-    <Box className="avatar-container">
+    <Box>
       <Avatar
-        className="card-avatar"
+        className={isModal ? 'details-avatar' : "article-avatar"}
         alt={title}
         src={url}
         variant='square'

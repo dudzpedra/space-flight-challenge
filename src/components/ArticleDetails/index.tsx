@@ -8,7 +8,7 @@ const ArticleDetails = ({ handleOpen }: ArticleDetailsProps) => {
     <Box>
       <Button
         onClick={handleOpen}
-        className="card-btn"
+        className="article-btn"
         variant="contained"
         color="secondary"
       >

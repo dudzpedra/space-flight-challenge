@@ -4,28 +4,26 @@
   flex-direction: row-reverse
 
 .card-odd, .card-even
-  padding: 0.5rem
-  width: 90%
-  margin: 1rem auto
+  width: 100%
+  margin: 2rem auto
   display: flex
-  justify-content: space-around
-  align-items: center
+  justify-content: space-evenly
+  align-items: center 
 
-  .card-avatar
+  .article-avatar
     height: 200px
-    width: 210px
+    width: 160px
 
-  .card-info
-    padding: 0.5rem
+  .article-info
     height: 100%
-    width: 50%
+    width: 45%
 
-    .card-title
+    .article-title
       text-align: justify
-      font-size: 0.7em
+      font-size: 0.65em
       font-weight: bold
 
-    .card-subtitle
+    .article-subtitle
       display: flex
       flex-direction: row
       align-items: center
@@ -39,35 +37,34 @@
         padding: 0.25rem
         font-size: 0.5em
 
-    .card-summary
-      font-size: 0.6em
+    .article-summary
+      font-size: 0.55em
 
-    .card-btn
+    .article-btn
       margin-top: 0.25rem
-      font-size: 0.5em
+      font-size: 0.45em
 
 @media (min-width: 1024px)
   .card-odd, .card-even
     width: 70%
     justify-content: space-between
 
-    .card-avatar
-      width: 320px
-      height: 300px
+    .article-avatar
+      width: 440px
+      height: 360px
 
-    .card-info
-      width: 60%
-      .card-title
+    .article-info
+      width: 50%
+
+      .article-title
         font-size: 1.3em
 
-      .card-summary
+      .article-summary
         font-size: 1em
 
-      .card-subtitle
-        .article-date
-          font-size: 0.8em
-        .article-site
-          font-size: 0.8em
+      .article-subtitle
+        .article-date, .article-site
+          font-size: 0.9em
 
-      .card-btn
-        font-size: 0.8em
+      .article-btn
+        font-size: 1em

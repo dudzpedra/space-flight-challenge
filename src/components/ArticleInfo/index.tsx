@@ -18,10 +18,10 @@ const ArticleInfo = ({ article }: ArticleInfoProps) => {
   const handleClose = () => setOpen(false);
 
   return (
-    <Box className="card-info">
-      <ArticleTitle title={article.title} />
-      <ArticleSubtitle date={article.publishedAt} site={article.newsSite} />
-      <ArticleSummary summary={article.summary} />
+    <Box className="article-info">
+      <ArticleTitle title={article.title} isModal={false} />
+      <ArticleSubtitle date={article.publishedAt} site={article.newsSite} isModal={false} />
+      <ArticleSummary summary={article.summary} isModal={false} />
       <ArticleDetails handleOpen={handleOpen} />
       <DetailsModal open={open} handleClose={handleClose} article={article} />
     </Box>
