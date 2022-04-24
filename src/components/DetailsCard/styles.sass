@@ -12,6 +12,11 @@
   border: 2px solid #1e2022
   color: #1e2022
 
+  .close-modal-btn
+    color: #1e2022
+    width: 20px
+    align-self: flex-end
+
   .details-main
     display: flex
     flex-direction: row
@@ -19,7 +24,7 @@
     justify-content: space-between
 
     .details-avatar
-      height: 190px
+      height: 220px
       width: 160px
 
     .details-info
@@ -28,17 +33,35 @@
       width: 45%
 
       .details-title
-        font-size: 0.6em
+        font-size: 0.75em
         font-weight: bold
 
       .details-date
-        font-size: 0.5em
+        font-size: 0.55em
 
       .details-summary
-        font-size: 0.56em
+        font-size: 0.6em
 
   .details-link
-    margin: 0.3rem auto
+    margin: 1rem auto 0
 
     .details-btn
       font-size: 0.6em
+
+@media (min-width: 1024px)
+  .details-container
+    width: 50%
+    .details-main
+      .details-avatar
+        width: 360px
+        height: 300px
+      .details-info
+        .details-title
+          font-size: 1.2em
+        .details-date
+          font-size: 0.8em
+        .details-summary
+          font-size: 1em
+    .details-link
+      .details-btn
+        font-size: 1em

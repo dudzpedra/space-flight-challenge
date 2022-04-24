@@ -12,7 +12,7 @@ const DetailsModal = ({ open, handleClose, article }: DetailsProps) => {
   return (
     <Modal open={open} onClose={handleClose}>
       <Box>
-        <DetailsCard article={article} />
+        <DetailsCard article={article} handleClose={handleClose} />
       </Box>
     </Modal>
   );
