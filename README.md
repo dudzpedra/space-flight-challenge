@@ -4,6 +4,10 @@ My solution for the Front-end Challenge 🏅 2021 - Space Flight News.
 
 > This is a challenge by [Coodesh](https://coodesh.com/).
 
+## Introduction
+
+Please checkout the presentational video [here](https://www.loom.com/embed/6952130348e74fe78da025afb10566da)
+
 ## Description
 
 A simple app to fetch and display Space Flight articles from an external API.
