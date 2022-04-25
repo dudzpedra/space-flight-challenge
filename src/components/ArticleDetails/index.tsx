@@ -11,6 +11,7 @@ const ArticleDetails = ({ handleOpen }: ArticleDetailsProps) => {
         className="article-btn"
         variant="contained"
         color="secondary"
+        data-testid='article-btn'
       >
         View More
       </Button>
